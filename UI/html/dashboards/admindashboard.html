@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Politico Online Voting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="SENGAYIRE Prince">
+    <link href="../../styles/style.css" rel="stylesheet">
+  </head>
+  <body class="dashboard">
+    <header>
+        <div class="container">
+          <div id="branding">
+            <h1>POLITICO</h1>
+          </div>
+          <nav>
+            <ul>
+              <li>SENGAYIRE Prince</li>
+            <li><a href="#">Logout</a> </li>
+            </ul>
+          </nav>
+        </div>     
+    </header>
+    <div class="showcase-dashboard">
+      <section class="admin-view">
+          <button class="tab-link" onclick="openPage('Home', this, 'white')" id="defaultOpen">Parties</button>
+          <button class="tab-link" onclick="openPage('News', this, 'white')">Offices</button>
+          <button class="tab-link" onclick="openPage('Contact', this, 'white')">Politicians</button>
+                 
+          <!-- style party view-->
+          <div id="Home" class="tabcontent">
+            <div class="actions">
+              <!-- Trigger/Opn The Modal -->
+            <button class="create_btn" id="myBtn">Create New</button> 
+             <!-- The Modal -->
+             <div id="myModal" class="modal">
+                <!-- Modal conent -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="form-create">
+                      <form>
+                        <caption<h1>Create new political party</h1></caption>
+                        <label for="Name"><b>Name:</b></label>
+                        <br>
+                        <input tye="text" placeholder="Enter Paryty name" name="party-name" required>
+                        <br>
+                        <label for="Name"><b>Headquater:</b></label>
+                        <input type="text" placeholder="Enter HQAddress" name="party-HQ" required>
+                        <br>
+                          <label for="logo"><b>Logo url:</b></label>
+                          <br>
+                          <input type="url" placeholder="Enter url" name="party-logo" required>
+                          <button type="submit">Create</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            <!-- create party popup-->
+            <script>
+                // Get the modal
+                let modal = document.getElementById('myModal');
+                
+                // Get the button that opens the modal
+                let btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                let span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                     
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                 }
+                }
+          </script>
+          
+
+            <button class="delete_btn">Delete</button>
+          </div>
+          <div class="content">
+            <div>
+              <table>
+                <tr>
+                  <th>#</th>
+                  <th>id</th>
+                  <th>Names</th>
+                  <th>Headquater</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+          <!-- style office view-->
+        <div id="News" class="tabcontent">
+          <div class="actions">
+            <button class="create_btn">Create New</button>  
+            <button class="delete_btn">Delete</button>
+          </div>
+          <div class="content">
+            <div>
+              <table>
+                <tr>
+                  <th>#</th>
+                  <th>id</th>
+                  <th>Names</th>
+                  <th>Headquater</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1111111</td>
+                  <td>FPR</td>
+                  <td>KIGALI</td>
+                  <td>
+                    <label class="containers">Edit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- candidate view -->
+        <div id="Contact" class="tabcontent">
+          <div class="actions">
+            <button class="create_btn">Create New</button>  
+            <button class="delete_btn">Delete</button>
+          </div>
+            <div class="content">
+              <div>
+                <table>
+                  <tr>
+                    <th>#</th>
+                    <th>id</th>
+                    <th>Names</th>
+                    <th>Headquater</th>
+                    <th>Action</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1111111</td>
+                    <td>FPR</td>
+                    <td>KIGALI</td>
+                    <td><label class="containers">Edit
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label></td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>1111111</td>
+                      <td>FPR</td>
+                      <td>KIGALI</td>
+                      <td>
+                        <label class="containers">Edit
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1111111</td>
+                    <td>FPR</td>
+                    <td>KIGALI</td>
+                    <td>
+                      <label class="containers">Edit
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                     </label>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>1111111</td>
+                      <td>FPR</td>
+                      <td>KIGALI</td>
+                      <td>
+                        <label class="containers">Edit
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                      </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+                                                          
+        <script>
+          function openPage(pageName,elmnt,color) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+
+        </section>
+      </div>
+    </body>
+</html>
