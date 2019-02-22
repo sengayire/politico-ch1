@@ -140,7 +140,7 @@
 
 /* +
   ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+  ##Screen = B/w 360px to 640px
 */
 
 @media (min-width: 360px) and (max-width: 640px) {
@@ -167,8 +167,9 @@
   }
 
   .container .home-btn button{
-   width: 380px;
+   width: 200px;
    text-align: center;
+   margin-left: 60px;
   }
 
   section #page-body{
@@ -179,7 +180,7 @@
   }
 
   #page-body .form-container{
-    margin: 30px 10px 0 10px;
+    margin: 30px 10px 0 5px;
   }
   }
 
